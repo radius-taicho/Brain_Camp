@@ -138,7 +138,7 @@ Figma: 初めての利用で、デザインの知識がない中、UIのプロ�
 
 ## 開発環境
 - **言語・フレームワーク**:  
-  - Ruby 3.2.0  
+  - Ruby 3.2.0 （OpenSSL 1.1 でビルド） 
   - Rails 7.0.0  
   - HTML5  
   - JavaScript  
@@ -182,7 +182,7 @@ Figma: 初めての利用で、デザインの知識がない中、UIのプロ�
 ## ローカルでの動作方法
 ### 前提条件
 以下のツールがインストールされていることを確認してください：
-- Ruby 3.2.0
+- Ruby 3.2.0（OpenSSL 1.1 でビルドされている必要があります）
 - Rails 7.0.0
 - MySQL (または使用しているデータベース)
 - Git
@@ -201,7 +201,8 @@ Figma: 初めての利用で、デザインの知識がない中、UIのプロ�
 データベースをセットアップ
 以下のコマンドを順に実行して、データベースを作成・マイグレーション・Seedデータを投入します。
 
-``` rails db:create rails db:migrate rails db:seed ```
+``` rails db:create```  
+```rails db:migrate rails db:seed ```
 
 サーバーを起動
 Railsサーバーを起動します。
